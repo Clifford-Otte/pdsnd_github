@@ -204,43 +204,17 @@ def display_data(df):
     '''Function displays 5 lines of data if user says yes to viewing data.
     After displaying 5 lines, asks user if they want 5 more and continues until they answer no.'''
     
-    def is_valid(display):
-        if display.lower() in ['yes', 'no']:
-            return True
-        else:
-            return False
-    head = 0
-    tail = 5
-    valid_input = False
-    while valid_input == False:
-        display = input('\nDo you want to see 5 rows of trip data? '
-                        'Type \'yes\' or \'no\'.\n')
-        valid_input = is_valid(display)
-        if valid_input == True:
-            break
-        else:
-            print("That is not a valid input. Please type 'yes' or 'no'.")
-    if display.lower() == 'yes':
-        print(df[df.columns[0:-1]].iloc[head:tail])
-        display_more = ''
-        while display_more.lower() != 'no':
-            valid_input_2 = False
-            while valid_input_2 == False:
-                display_more = input('\nDo you want to see 5 more rows of trip data?'
-                                     'Type \'yes\' or \'no\'.\n')
-                valid_input_2 = is_valid(display_more)
-                if valid_input_2 == True:
-                    break
-                else:
-                    print("That is not a valid input. Please type 'yes' or 'no'.")
-            if display_more.lower() == 'yes':
-                 head += 5
-                 tail += 5
-                 print(df[df.columns[0:-1]].iloc[head:tail])
-            elif display_more.lower() == 'no':
-                break
+    data = 0
 
-    
+    while True:
+	answer = input('Would you like to see 5 lines of raw data? Enter yes or no: ')
+ 	if answer.lower() == 'yes':
+	    print(df[data : data+5])
+	    data += 5
+
+	else:
+	    break
+            
 def main():
     while True:
         city, month, day = get_filters()

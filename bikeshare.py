@@ -203,18 +203,18 @@ def user_stats(df):
 def display_data(df):
     '''Function displays 5 lines of data if user says yes to viewing data.
     After displaying 5 lines, asks user if they want 5 more and continues until they answer no.'''
-    
+
     data = 0
 
     while True:
         answer = input('Would you like to see 5 lines of raw data? Enter yes or no: ')
- 	if answer.lower() == 'yes':
-	    print(df[data : data+5])
-	    data += 5
+        if answer.lower() == 'yes':
+            print(df[data : data+5])
+            data += 5
 
-	else:
-	    break
-            
+        else:
+            break
+
 def main():
     while True:
         city, month, day = get_filters()

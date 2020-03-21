@@ -17,4 +17,7 @@ https://www.pressthered.com/adding_dates_and_times_in_python/
 https://docs.python.org/3/library/functions.html (various topics on functions)
 Udacity Programming for Data Science with Programing Nanodegree Program - Lessons on numpy, pandas and python
 
-
+###Updates and Revisions
+4 Mar 2020 - original project creation
+5 Mar 2020 - initial project debug
+6 Mar 2020 - project revised, submitted and accepted

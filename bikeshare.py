@@ -207,7 +207,7 @@ def display_data(df):
     data = 0
 
     while True:
-	answer = input('Would you like to see 5 lines of raw data? Enter yes or no: ')
+        answer = input('Would you like to see 5 lines of raw data? Enter yes or no: ')
  	if answer.lower() == 'yes':
 	    print(df[data : data+5])
 	    data += 5

@@ -5,7 +5,7 @@ This project was started on 4 March 2020. It was finished and submitted on 6 Mar
 Udacity Bikeshare Data Project for Programming in Data Science
 
 ### Description
-Describe what your project is about and what it does
+This program is written in Python code.  It will import data from US bike share data sources from 3 cities that include Washington, Chicago, and New York.  It computes descriptive statistics about the data, as well as accepts input from users while running in a terminal to create an interactive feel to pull data based on the user's input and display statistics related to their input
 
 ### Files used
 Include the files used

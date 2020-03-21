@@ -21,3 +21,6 @@ Udacity Programming for Data Science with Programing Nanodegree Program - Lesson
 4 Mar 2020 - original project creation
 5 Mar 2020 - initial project debug
 6 Mar 2020 - project revised, submitted and accepted
+
+###Copyright and Licensing Info
+There are no copyrights on this project - it is open source for all
